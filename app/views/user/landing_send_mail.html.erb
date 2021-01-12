@@ -1,0 +1,21 @@
+<form action="/send_mail" method="post">
+<% if user_signed_in? %>
+    <br><br>
+    <h1>Send Mail</h1>
+    <tr>
+        <td>E-mail : <input type="text" name="mail"></td><br><br>
+        <td>Message : <input type="text" name="message"></td><br><br>
+
+        <button type="submit">Send mail</button>
+    </tr>
+    
+
+<% else %>
+
+<%= link_to('กรุณาเข้าสู่ระบบ', new_user_session_path , method: :get) %>
+
+
+<% end %>
+
+</form>
+

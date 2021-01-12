@@ -1,0 +1,9 @@
+<form action="/landing_send_mail" method="get">
+<input type="text" value="<%= current_user.title  %>"><br><br>
+<input type="text" value="<%= current_user.fullName  %>"><br><br>
+<input type="text" value="<%= current_user.nickName  %>"><br><br>
+<input type="text" value="<%= current_user.phone  %>"><br><br>
+<input type="text" value="<%= current_user.address  %>"><br><br>
+<button type="submit">Message</button>
+<button type="submit" formaction="/index">Back</button>
+</form>

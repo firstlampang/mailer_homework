@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+          
+  <h1><%= current_user.email %></h1>
+  
+  <h1><%= link_to('Edit', edit_path , method: :get) %> | <%= link_to('Info', info_path , method: :get) %> | <%= link_to('Logout', destroy_user_session_path, method: :delete) %></h1>
+  
+<% end %>

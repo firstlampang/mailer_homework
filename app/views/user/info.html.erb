@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+    <h1><%= current_user.title %><%= current_user.fullName %></h1>
+    <h1><%= current_user.nickName %></h1>
+    <h1><%= current_user.phone %></h1>
+    <h1><%= current_user.address %></h1>
+    <h1><%= link_to('Back', index_path , method: :get) %></h1> 
+<% end %>
